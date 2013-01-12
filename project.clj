@@ -1,11 +1,13 @@
 (defproject overtoneinterface "0.1.0-SNAPSHOT"
   :description "FIXME: write this!"
-  :dependencies [[org.clojure/clojure "1.3.0"]
-                 [overtone "0.6.0"]
+  :dependencies [[aleph "0.3.0-alpha2"]
+                 [org.clojure/clojure "1.3.0"]
+                 [overtone "0.8.0-SNAPSHOT"]
                  [jayq "0.1.0-SNAPSHOT"]
                  [crate "0.1.0-SNAPSHOT"]
                  [fetch "0.1.0-SNAPSHOT"]
-                 [noir "1.3.0-alpha10"]]
+                 [noir "1.3.0-alpha10"]
+                 [noir-async "1.1.0-beta7"]]
   :cljsbuild {:source-path "src"
               :compiler {:output-dir "resources/public/cljs/"
                          :output-to "resources/public/cljs/bootstrap.js"
